@@ -2,6 +2,7 @@
 <html lang="en">
 
     <head>
+        {% load static %}
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link
@@ -9,7 +10,7 @@
             rel="stylesheet"
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
             crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <title>BookMyShow</title>
     </head>
 
@@ -112,7 +113,7 @@
             <div class="luckybanner rows">
                 <div class="luckycard">
                     <div >
-                        <img src="imgs/lucky-baskhar-card.avif" alt="not found" style="width: 250px;">
+                        <img src="{% static 'imgs/lucky-baskhar-card.avif' %}" alt="not found" style="width: 250px;">
                     </div>
                     <div style="background-color: black; color: white; border-radius: 5px;">
                         <p style="padding-left: 100px;">in cinemas</p>
@@ -120,7 +121,7 @@
                 </div>
                 <div class="carddesc">
                     <h1 class="luckytxt">Lucky Baskhar</h1>
-                    <img src="imgs/reviewcard.png" style="border-radius: 10px;" alt="not found">
+                    <img src="{% static 'imgs/reviewcard.png' %}" style="border-radius: 10px;" alt="not found">
                     <br>
                     <p style="background-color: rgb(230, 230, 230); color: black; font-size: large; border-radius: 3px; display: inline-block; margin: 20px 0px; padding: 0px 7px; ">2D</p> 
                     <p style="background-color: rgb(230, 230, 230); color: black; font-size: large; border-radius: 3px; display: inline-block; margin: 20px 0px; padding: 0px 7px; ">Malayalam,Telugu,Hindi,Tamil,Kannada</p>
@@ -137,11 +138,11 @@
                 <h4 style="font-weight: 650;">Cast</h4>
                 <div class="rows">
                     <div class="cols" style="text-align: center; padding-right: 35px;">
-                        <img src="imgs/dq.avif" class="profile" alt="not found">
+                        <img src="{% static 'imgs/dq.avif' %}" class="profile" alt="not found">
                         <p> <span style="font-weight: 500;">Dulquer <br>Salmaan </span><br>Actor</p>
                     </div>
                     <div class="cols" style="text-align: center;">
-                        <img src="imgs/meenakshi.avif" class="profile" alt="not found">
+                        <img src="{% static 'imgs/meenakshi.avif' %}" class="profile" alt="not found">
                         <p> <span style="font-weight: 500;">Meenakshi <br>Chaudhary </span><br>Actor</p>
                     </div>
                 </div>
@@ -151,23 +152,23 @@
                 <h4 style="font-weight: 650;">Crew</h4>
                 <div class="rows">
                     <div class="cols" style="text-align: center; padding-right: 35px;">
-                        <img src="imgs/venkee.avif" class="profile" alt="not found">
+                        <img src="{% static 'imgs/venkee.avif' %}" class="profile" alt="not found">
                         <p> <span style="font-weight: 500;">Venky Atluri</span><br>Director,Writer</p>
                     </div>
                     <div class="cols" style="text-align: center; padding-right: 35px;">
-                        <img src="imgs/s-naga6.avif" class="profile" alt="not found">
+                        <img src="{% static 'imgs/s-naga6.avif' %}" class="profile" alt="not found">
                         <p> <span style="font-weight: 500;">Suryadevara <br>Naga Vamsi </span><br>Producer</p>
                     </div>
                     <div class="cols" style="text-align: center; padding-right: 35px;">
-                        <img src="imgs/g-v-prakash-kumar.avif" class="profile" alt="not found">
+                        <img src="{% static 'imgs/g-v-prakash-kumar.avif' %}" class="profile" alt="not found">
                         <p> <span style="font-weight: 500;">G. V. Prakash <br>Kumar</span><br>Musician</p>
                     </div>
                     <div class="cols" style="text-align: center; padding-right: 35px;">
-                        <img src="imgs/nimish-ravi.avif" class="profile" alt="not found">
+                        <img src="{% static 'imgs/nimish-ravi.avif' %}" class="profile" alt="not found">
                         <p> <span style="font-weight: 500;">Nimish Ravi </span><br>Cinematographer</p>
                     </div>
                     <div class="cols" style="text-align: center; padding-right: 35px;">
-                        <img src="imgs/navin-nooli.avif" class="profile" alt="not found">
+                        <img src="{% static 'imgs/navin-nooli.avif' %}" class="profile" alt="not found">
                         <p> <span style="font-weight: 500;">Navin Nooli </span><br>Editor</p>
                     </div>
                 </div>
@@ -179,29 +180,29 @@
                 </span>
                 <div class="rows">
                     <div class="luckypad">
-                        <a href><img src="imgs/pushpa.jpg" alt class="poster"></a>
+                        <a href><img src="{% static 'imgs/pushpa.jpg' %}" alt class="poster"></a>
                         <h5>Pushpa 2: The Rule</h5>
                         <p>Action/Thriller</p>
                     </div>
                     <div class="luckypad">
-                        <a href><img src="imgs/valyettan.jpg" alt
+                        <a href><img src="{% static 'imgs/valyettan.jpg' %}" alt
                                 class="poster"></a>
                         <h5>Vallyettan</h5>
                         <p>Action/Drama</p>
                     </div>
                     <div class="luckypad">
-                        <a href><img src="imgs/mura.jpg" alt class="poster"></a>
+                        <a href><img src="{% static 'imgs/mura.jpg' %}" alt class="poster"></a>
                         <h5>Mura</h5>
                         <p>Action/Drama</p>
                     </div>
                     <div class="luckypad">
-                        <a href><img src="imgs/allweimagine.jpg" alt
+                        <a href><img src="{% static 'imgs/allweimagine.jpg' %}" alt
                                 class="poster"></a>
                         <h5>All We Imagine as Light <br>(Eng Sub)</h5>
                         <p>Comedy/Drama</p>
                     </div>
                     <div class="luckypad">
-                        <a href><img src="imgs/sthanarthi.jpg" alt
+                        <a href><img src="{% static 'imgs/sthanarthi.jpg' %}" alt
                                 class="poster"></a>
                         <h5>Sthanarthi Sreekuttan</h5>
                         <p>Comedy/Drama</p>
@@ -213,7 +214,7 @@
         <div class="footer xyz">
             <div class="sub1 rows">
                 <h6>
-                    <img src="imgs/hut.svg" alt="not found"
+                    <img src="{% static 'imgs/hut.svg' %}" alt="not found"
                         style="width: 30px;"> List your
                     Show
                     <span style="font-weight: 300; padding: 0px 10px;">Got a
@@ -226,15 +227,15 @@
         </div>
         <div class="sub2 xyz rows">
             <div class="customercare icon">
-                <img src="imgs/customercare.svg" alt>
+                <img src="{% static 'imgs/customercare.svg' %}" alt>
                 <p>24/7 CUSTOMER CARE</p>
             </div>
             <div class="booking icon">
-                <img src="imgs/booking.svg" alt>
+                <img src="{% static 'imgs/booking.svg' %}" alt>
                 <p>RESEBD BOOKING CONFIRMATION</p>
             </div>
             <div class="subscribe icon">
-                <img src="imgs/subscribe.svg" alt>
+                <img src="{% static 'imgs/subscribe.svg' %}" alt>
                 <p>SUBSCRIBE TO THE NEWSLETTER</p>
             </div>
         </div>
@@ -279,7 +280,7 @@
                     in Kolkata | Cinemas in Kochi</p>
                     <br>
                     <span >⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯<img
-                        src="	https://in.bmscdn.com/webin/common/icons/logo.svg"
+                        src="{% static 'https://in.bmscdn.com/webin/common/icons/logo.svg' %}"
                         alt>⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ </span>
                         <br>
                         <br>

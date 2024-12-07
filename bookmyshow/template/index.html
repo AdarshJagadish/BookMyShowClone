@@ -2,6 +2,7 @@
 <html lang="en">
 
     <head>
+        {% load static %}
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link
@@ -9,7 +10,7 @@
             rel="stylesheet"
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
             crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
         <title>BookMyShow</title>
     </head>
 
@@ -113,11 +114,11 @@
                 data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="imgs/carocel1.avif" class="d-block w-100"
+                        <img src="{% static 'imgs/carocel1.avif'%}" class="d-block w-100"
                             alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="imgs/carocel2.avif" class="d-block w-100"
+                        <img src="{% static 'imgs/carocel2.avif'%}" class="d-block w-100"
                             alt="...">
                     </div>
                 </div>
@@ -141,36 +142,36 @@
             </span>
             <div class="rows">
                 <div>
-                    <a href><img src="imgs/pushpa.jpg" alt class="poster"></a>
+                    <a href><img src="{% static 'imgs/pushpa.jpg' %}" alt class="poster"></a>
                     <h4>Pushpa 2: The Rule</h4>
                     <p class="des">Action/Thriller</p>
                 </div>
                 <div>
-                    <a href="index2.html"><img src="imgs/lucky baskhar.avif" alt
+                    <a href="../index2"><img src="{% static 'imgs/lucky baskhar.avif' %}" alt
                             class="poster"></a>
                     <h4>Lucky Baskhar</h4>
                     <p class="des">Action/Drama</p>
                 </div>
                 <div>
-                    <a href><img src="imgs/mura.jpg" alt class="poster"></a>
+                    <a href><img src="{% static 'imgs/mura.jpg' %}" alt class="poster"></a>
                     <h4>Mura</h4>
                     <p class="des">Action/Drama</p>
                 </div>
                 <div>
-                    <a href><img src="imgs/allweimagine.jpg" alt
+                    <a href><img src="{% static 'imgs/allweimagine.jpg' %}" alt
                             class="poster"></a>
                     <h4>All We Imagine as Light <br>(Eng Sub)</h4>
                     <p class="des">Comedy/Drama</p>
                 </div>
                 <div>
-                    <a href><img src="imgs/sthanarthi.jpg" alt
+                    <a href><img src="{% static 'imgs/sthanarthi.jpg' %}" alt
                             class="poster"></a>
                     <h4>Sthanarthi Sreekuttan</h4>
                     <p class="des">Comedy/Drama</p>
                 </div>
             </div>
             <div>
-                <img src="imgs/stream.avif" alt="not found"
+                <img src="{% static 'imgs/stream.avif' %}" alt="not found"
                     style="margin: 90px 0px; width: 100%;">
             </div>
             <div>
@@ -179,19 +180,19 @@
                 </span>
                 <div class="rows">
                     <div style="margin-bottom: 50px;">
-                        <a href><img src="imgs/work.avif" alt
+                        <a href><img src="{% static 'imgs/work.avif' %}" alt
                                 class="poster"></a>
                     </div>
                     <div>
-                        <a href><img src="imgs/kids.avif" alt
+                        <a href><img src="{% static 'imgs/kids.avif' %}" alt
                                 class="poster"></a>
                     </div>
                     <div>
-                        <a href><img src="imgs/comedy.avif" alt
+                        <a href><img src="{% static 'imgs/comedy.avif' %}" alt
                                 class="poster"></a>
                     </div>
                     <div>
-                        <a href><img src="imgs/music.avif" alt
+                        <a href><img src="{% static 'imgs/music.avif' %}" alt
                                 class="poster"></a>
                     </div>
                 </div>
@@ -199,7 +200,7 @@
 
         </div>
         <div class="section5 xyz">
-            <a href><img src="imgs/premierlogo.avif" alt></a>
+            <a href><img src="{% static 'imgs/premierlogo.avif' %}" alt></a>
             <div>
                 <span style="font-weight:bolder; color:white">
                     <h3>Premieres</h3>
@@ -207,31 +208,31 @@
                 </span>
                 <div class="rows">
                     <div class>
-                        <a href><img src="imgs/pre1.jpg" alt
+                        <a href><img src="{% static 'imgs/pre1.jpg' %}" alt
                                 class="poster"></a>
                         <h4>Level Cross</h4>
                         <p>Malayalam</p>
                     </div>
                     <div>
-                        <a href><img src="imgs/pre2.jpg" alt
+                        <a href><img src="{% static 'imgs/pre2.jpg' %}" alt
                                 class="poster"></a>
                         <h4>Gumasthan</h4>
                         <p>Malayalam</p>
                     </div>
                     <div>
-                        <a href><img src="imgs/pre3.jpg" alt
+                        <a href><img src="{% static 'imgs/pre3.jpg' %}" alt
                                 class="poster"></a>
                         <h5>We Live in Time</h4>
                         <p>English</p>
                     </div>
                     <div>
-                        <a href><img src="imgs/pre4.jpg" alt
+                        <a href><img src="{% static 'imgs/pre4.jpg' %}" alt
                                 class="poster"></a>
                         <h4>1992</h4>
                         <p>English</p>
                     </div>
                     <div>
-                        <a href><img src="imgs/pre5.jpg" alt
+                        <a href><img src="{% static 'imgs/pre5.jpg' %}" alt
                                 class="poster"></a>
                         <h4>The Wild Robot (Preview)</h4>
                         <p>English</p>
@@ -245,29 +246,29 @@
             </span>
             <div class="rows">
                 <div class>
-                    <a href><img src="imgs/mus1.jpg" alt class="poster"></a>
+                    <a href><img src="{% static 'imgs/mus1.jpg' %}" alt class="poster"></a>
                     <h5>Shillong Cherry Blossom<br>Festival 2024</h5>
                     <p class="des">RBDSA Sports
                         Complex:<br>Shillong<br>Concerts</p>
                 </div>
                 <div>
-                    <a href><img src="imgs/mus2.jpg" alt class="poster"></a>
+                    <a href><img src="{% static 'imgs/mus2.jpg' %}" alt class="poster"></a>
                     <h5>Harfest Buon Natale <br>Carnival</h5>
                     <p class="des">Sakthan Ground: Thrissur<br>Concerts</p>
                 </div>
                 <div>
-                    <a href><img src="imgs/mus3.jpg" alt class="poster"></a>
+                    <a href><img src="{% static 'imgs/mus3.jpg' %}" alt class="poster"></a>
                     <h5>Ed Sheeran: +-=÷× India <br>Tour 2025</h5>
                     <p class="des">Multiple Venues<br>Concerts</p>
                 </div>
                 <div>
-                    <a href><img src="imgs/mus4.jpg" alt class="poster"></a>
+                    <a href><img src="{% static 'imgs/mus4.jpg' %}" alt class="poster"></a>
                     <h5>Lollapalooza India 2025</h5>
                     <p class="des">Mahalaxmi Race
                         Course:<br>Mumbai<br>Concerts</p>
                 </div>
                 <div>
-                    <a href><img src="imgs/mus5.jpg" alt class="poster"></a>
+                    <a href><img src="{% static 'imgs/mus5.jpg' %}" alt class="poster"></a>
                     <h5>HillTop Vagator: Goa</h5>
                     <p class="des">Mumbai<br>Concerts</p>
                 </div>
@@ -349,7 +350,7 @@
         <div class="footer xyz">
             <div class="sub1 rows">
                 <h6>
-                    <img src="imgs/hut.svg" alt="not found"
+                    <img src="{% static 'imgs/hut.svg' %}" alt="not found"
                         style="width: 30px;"> List your
                     Show
                     <span style="font-weight: 300; padding: 0px 10px;">Got a
@@ -362,15 +363,15 @@
         </div>
         <div class="sub2 xyz rows">
             <div class="customercare icon">
-                <img src="imgs/customercare.svg" alt>
+                <img src="{% static 'imgs/customercare.svg' %}" alt>
                 <p>24/7 CUSTOMER CARE</p>
             </div>
             <div class="booking icon">
-                <img src="imgs/booking.svg" alt>
+                <img src="{% static 'imgs/booking.svg' %}" alt>
                 <p>RESEBD BOOKING CONFIRMATION</p>
             </div>
             <div class="subscribe icon">
-                <img src="imgs/subscribe.svg" alt>
+                <img src="{% static 'imgs/subscribe.svg' %}" alt>
                 <p>SUBSCRIBE TO THE NEWSLETTER</p>
             </div>
         </div>
@@ -414,9 +415,8 @@
                     Hyderabad | Cinemas in Pune | Cinemas in Ahmedabad | Cinemas
                     in Kolkata | Cinemas in Kochi</p>
                     <br>
-                    <span >⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯<img
-                        src="	https://in.bmscdn.com/webin/common/icons/logo.svg"
-                        alt>⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ </span>
+                    <span >⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯<img src="{% static 'imgs/logo.svg' %}"
+                        alt="Not Found">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ </span>
                         <br>
                         <br>
                             <div class="cont">Copyright 2022 © Bigtree Entertainment Pvt.
